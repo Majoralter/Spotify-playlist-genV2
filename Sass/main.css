@@ -75,7 +75,7 @@ main .gif-section iframe {
   border-top: solid 1px #BABF95;
   border-bottom: solid 1px #BABF95;
   text-align: center;
-  margin-top: 5rem;
+  margin: 5rem 0;
   gap: 2rem;
 }
 .secondary-section h3 {
