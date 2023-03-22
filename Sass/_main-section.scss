@@ -59,6 +59,35 @@ main{
     }
 }
 
+.secondary-section{
+        padding: 1rem 8.625rem;
+        @include flexCenter(column,center,center);
+        border-top: solid 1px $dull-green;
+        border-bottom: solid 1px $dull-green;
+        text-align: center;
+        margin-top: 5rem;
+        gap: 2rem;
+
+        h3{
+            color: $dull-green;
+            font-size: 2.0625rem;
+            font-family: $font-heading;
+            white-space: normal;
+        }
+
+        button{
+                padding: 0.625rem 1.25rem;
+                font-size: 1rem;
+                font-family: $font-body;
+                background: $light-green;
+                border: none;
+                color: $bg-color;
+                font-weight: 700;
+                border-radius: 0.3125rem;
+                cursor: pointer;
+        }
+}
+
 @include media-sm{
     main{
         @include flexCenter(column,center,center);
@@ -71,7 +100,14 @@ main{
         }
 
     }
+
+    .secondary-section{
+        padding: 20px;
+    }
 }
+
+
+
 
 @include media-md{
     main{
@@ -107,6 +143,5 @@ main{
                 @include flexCenter(column,center,center)
             }
         }
-
     }
 }

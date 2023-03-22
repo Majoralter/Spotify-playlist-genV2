@@ -66,6 +66,36 @@ main .gif-section iframe {
      object-fit: scale-down;
 }
 
+.secondary-section {
+  padding: 1rem 8.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: solid 1px #BABF95;
+  border-bottom: solid 1px #BABF95;
+  text-align: center;
+  margin-top: 5rem;
+  gap: 2rem;
+}
+.secondary-section h3 {
+  color: #BABF95;
+  font-size: 2.0625rem;
+  font-family: "Anton", sans-serif;
+  white-space: normal;
+}
+.secondary-section button {
+  padding: 0.625rem 1.25rem;
+  font-size: 1rem;
+  font-family: "DM Sans", sans-serif;
+  background: #00AE5B;
+  border: none;
+  color: #172121;
+  font-weight: 700;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+}
+
 @media (max-width: 475px) {
   main {
     display: flex;
@@ -76,6 +106,9 @@ main .gif-section iframe {
   }
   main .main-section-1 h1 {
     font-size: 2.0625rem;
+  }
+  .secondary-section {
+    padding: 20px;
   }
 }
 @media (max-width: 768px) {
