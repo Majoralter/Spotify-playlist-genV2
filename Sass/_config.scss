@@ -1,0 +1,51 @@
+// colors
+$bg-color: #172121;
+$dot-color: #7A9B76;
+$white: #FDFFFC;
+$black: #000000;
+$light-green: #00AE5B;
+
+// Dimensions
+$dot-size: 0.0625rem;
+$dot-space: 1.375rem;
+
+// Typography
+$font-heading: "Anton", sans-serif;
+$font-body: "DM Sans", sans-serif;
+
+// Resets
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// Mixins
+@mixin flexCenter($flex-direction,$align-items,$justify-content){
+    display: flex;
+    flex-direction: $flex-direction;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+
+@mixin transition-ease{
+    transition: all .3s ease-in-out;
+}
+
+@mixin media-sm{
+    @media (max-width: 475px){
+        @content;
+    }
+}
+
+@mixin media-md{
+    @media (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin media-lg{
+    @media (max-width: 1440px){
+        @content;
+    }
+}

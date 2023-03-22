@@ -1,0 +1,112 @@
+main{
+    @include flexCenter(row,center,space-between);
+    padding: 1rem 8.625rem;
+
+    .main-section-1{
+        @include flexCenter(column,center,center);
+        gap: 1rem;
+
+        h1{
+            color: $white;
+            font-family: $font-heading;
+            font-size: 4.125rem;
+        }
+
+        p{
+            color: $white;
+            font-family: $font-body;
+            font-size: 1.125rem;
+            font-weight: 400;
+        }
+
+        .main-cta{
+            @include flexCenter(row,center,center);
+            gap: 1rem;
+
+            button:nth-child(1){
+                padding: 0.625rem 1.25rem;
+                font-size: 1rem;
+                font-family: $font-body;
+                background: $light-green;
+                border: none;
+                color: $bg-color;
+                font-weight: 700;
+                border-radius: 0.3125rem;
+                cursor: pointer;
+            }
+
+            button:nth-child(2){
+                padding: 0.625rem 1.25rem;
+                font-size: 1rem;
+                font-family: $font-body;
+                border: none;
+                outline: solid 2px $white;
+                color: $white;
+                font-weight: 500;
+                border-radius: 0.3125rem;
+                cursor: pointer;
+                background: none;
+            }
+        }
+    }
+
+    .gif-section{
+        iframe{
+            border-radius: 10px;
+            max-width: 100%;
+            object-fit: scale-down;
+        }
+    }
+}
+
+@include media-sm{
+    main{
+        @include flexCenter(column,center,center);
+        gap: 1.25rem;
+
+        .main-section-1{
+            h1{
+                font-size: 2.0625rem;
+            }
+        }
+
+    }
+}
+
+@include media-md{
+    main{
+        @include flexCenter(column,center,center);
+        gap: 1.25rem;
+        padding: 1.25rem;
+
+        .main-section-1{
+           text-align: center;
+
+            h1{
+                font-size: 3rem;
+            }
+
+            .main-cta{
+                @include flexCenter(column,center,center)
+            }
+        }
+
+    }
+}
+
+@include media-lg{
+    main{
+        @include flexCenter(column,center,center);
+        gap: 1.25rem;
+        padding: 1.25rem;
+
+        .main-section-1{
+           text-align: center;
+
+            .main-cta{
+                @include flexCenter(column,center,center)
+            }
+        }
+
+    }
+}
