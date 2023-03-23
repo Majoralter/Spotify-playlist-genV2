@@ -2,7 +2,7 @@ const authBtn  = document.querySelector(".auth-btn");
 const CLIENT_ID = "a787e9c6fba0418ba289ea9a1831dd8a";
 const REDIRECT_URL = "https://spotify-playlist-gen-v2.vercel.app/#";
 const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
-const RESPONSE_TYPE = "token"
+const RESPONSE_TYPE = "code"
 const SCOPES = [
   "playlist-modify-public",
   "streaming",
