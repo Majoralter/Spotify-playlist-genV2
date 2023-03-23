@@ -60,11 +60,16 @@ main .main-section-1 .main-cta button:nth-child(2) {
   cursor: pointer;
   background: none;
 }
-main .gif-section iframe {
+main .gif-section img {
   border-radius: 10px;
   max-width: 100%;
   -o-object-fit: scale-down;
      object-fit: scale-down;
+  transition: all 0.3s ease-in-out;
+  cursor: n-resize;
+}
+main .gif-section img:hover {
+  margin-top: -20px;
 }
 
 .secondary-section {
@@ -171,7 +176,7 @@ header nav .nav-section {
 header nav .nav-section .logo {
   font-family: "Teko", sans-serif;
   color: #FDFFFC;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: none;
 }
 header nav .nav-section .menu {

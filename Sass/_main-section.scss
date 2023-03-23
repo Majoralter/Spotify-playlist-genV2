@@ -52,10 +52,16 @@ main{
     }
 
     .gif-section{
-        iframe{
+        img{
             border-radius: 10px;
             max-width: 100%;
             object-fit: scale-down;
+            @include transition-ease;
+            cursor: n-resize;
+
+            &:hover{
+                margin-top: -20px;
+            }
         }
     }
 }

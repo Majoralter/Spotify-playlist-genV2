@@ -18,5 +18,5 @@ const SCOPES_URL = SCOPES.join(SCOPES_DEL);
 
 authBtn.addEventListener("click", async function(e) {
   e.preventDefault();
-  window.location.href = `${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URL}&scope=${SCOPES_URL}&response_type=${RESPONSE_TYPE}&show_dialog=true`;
+  window.location.href = `${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URL}&scope=${SCOPES_URL}&response_type=token&show_dialog=true`;
 })
